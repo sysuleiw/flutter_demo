@@ -16,20 +16,20 @@ class MineDrawer extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Padding(
-              padding: const EdgeInsets.only(top: 38.0),
+              padding: const EdgeInsets.only(top: 58.0, bottom: 20),
               child: Row(
                 children: <Widget>[
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 16.0),
                     child: ClipOval(
                       child: Image.asset(
-                        "imgs/avatar.png",
+                        "resources/images/ysmd.jpg",
                         width: 80,
                       ),
                     ),
                   ),
                   Text(
-                    "Wendux",
+                    "王磊",
                     style: TextStyle(fontWeight: FontWeight.bold),
                   )
                 ],
@@ -40,11 +40,11 @@ class MineDrawer extends StatelessWidget {
                 children: <Widget>[
                   ListTile(
                     leading: const Icon(Icons.add),
-                    title: const Text('Add account'),
+                    title: const Text('添加用户'),
                   ),
                   ListTile(
                     leading: const Icon(Icons.settings),
-                    title: const Text('Manage accounts'),
+                    title: const Text('管理用户'),
                   ),
                 ],
               ),
