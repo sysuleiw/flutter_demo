@@ -25,6 +25,7 @@ dependencies:
   cupertino_icons: ^0.1.2
   flutter_package_demo:
     path: ../flutter-package-demo/flutter_package_demo/
+  webview_flutter: ^0.3.3+1
 
 dev_dependencies:
   flutter_test:
@@ -45,6 +46,9 @@ flutter:
   assets:
     - resources/images/ysmd.jpg
     - packages/flutter_package_demo/common/GflLayout/icon_login.png
+    - packages/flutter_package_demo/home/banner.png
+    - packages/flutter_package_demo/home/home_icon_dingxindai.png
+    - packages/flutter_package_demo/home/home_icon_ruyidai.png
 #    - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

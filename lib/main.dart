@@ -4,6 +4,7 @@ import 'Pages/home.dart';
 import 'Pages/loan.dart';
 import 'Pages/question.dart';
 import 'Pages/mine.dart';
+import 'Home/webview_wrapper.dart';
 
 void main() => runApp(MyApp());
 
@@ -16,6 +17,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: MyHomePage(title: '广发互联小贷'),
+      routes: {
+        'openWebView': (context) => WebviewWrapper(),
+      },
     );
   }
 }
@@ -63,7 +67,12 @@ class _MyHomePageState extends State<MyHomePage>
         ],
         leading: Builder(builder: (context) {
           return IconButton(
-            icon: Icon(Icons.dashboard),
+            icon: ClipOval(
+              child: Image.asset(
+                "common/GflLayout/icon_login.png",
+                package: "flutter_package_demo",
+              ),
+            ),
             onPressed: () {
               Scaffold.of(context).openDrawer();
             },
