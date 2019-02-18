@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'Home/MineDrawer.dart';
+import 'Home/mine_drawer.dart';
 import 'Pages/home.dart';
 import 'Pages/loan.dart';
 import 'Pages/question.dart';
@@ -31,7 +31,6 @@ class _MyHomePageState extends State<MyHomePage>
     with SingleTickerProviderStateMixin {
   List tabs = ['主页', '贷款', '常见问题', '我的'];
   int _selectedIndex = 0;
-  final _bottomNavigationColor = Colors.grey;
   PageController _pageController = PageController(initialPage: 0);
 
   @override
@@ -82,54 +81,30 @@ class _MyHomePageState extends State<MyHomePage>
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.home,
-                color: _bottomNavigationColor,
-              ),
-              activeIcon: Icon(
-                Icons.home,
-                color: Colors.blue,
               ),
               title: Text(
                 tabs[0],
-                style: TextStyle(color: _bottomNavigationColor),
               )),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.monetization_on,
-                color: _bottomNavigationColor,
-              ),
-              activeIcon: Icon(
-                Icons.monetization_on,
-                color: Colors.blue,
               ),
               title: Text(
                 tabs[1],
-                style: TextStyle(color: _bottomNavigationColor),
               )),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.device_unknown,
-                color: _bottomNavigationColor,
-              ),
-              activeIcon: Icon(
-                Icons.device_unknown,
-                color: Colors.blue,
               ),
               title: Text(
                 tabs[2],
-                style: TextStyle(color: _bottomNavigationColor),
               )),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.person_outline,
-                color: _bottomNavigationColor,
-              ),
-              activeIcon: Icon(
-                Icons.person_outline,
-                color: Colors.blue,
               ),
               title: Text(
                 tabs[3],
-                style: TextStyle(color: _bottomNavigationColor),
               )),
         ],
         currentIndex: _selectedIndex,

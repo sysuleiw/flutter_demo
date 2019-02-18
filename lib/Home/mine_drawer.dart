@@ -23,8 +23,9 @@ class MineDrawer extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(horizontal: 16.0),
                     child: ClipOval(
                       child: Image.asset(
-                        "resources/images/ysmd.jpg",
-                        width: 80,
+                        "common/GflLayout/icon_login.png",
+                        package: "flutter_package_demo",
+                        width: 60,
                       ),
                     ),
                   ),

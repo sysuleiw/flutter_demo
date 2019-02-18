@@ -9,8 +9,11 @@ class HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      body: Center(
-        child: Text('当前是首页'),
+      body: Column(
+        children: <Widget>[
+          Image.asset("common/GflLayout/icon_login.png",
+              package: 'flutter_package_demo', width: 60)
+        ],
       ),
     );
   }
