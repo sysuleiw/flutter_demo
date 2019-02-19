@@ -23,6 +23,9 @@ class WebviewWrapperState extends State<WebviewWrapper> {
           onWebViewCreated: (WebViewController webViewController) {
             _controller.complete(webViewController);
           },
+          javascriptChannels: <JavascriptChannel>[
+            _toasterJavascriptChannel(context),
+          ].toSet(),
         );
       }),
     );
