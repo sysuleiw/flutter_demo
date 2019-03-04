@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.blue, //整体主题颜色为蓝色
       ),
       home: MyHomePage(title: '广发互联小贷'),
       routes: {
